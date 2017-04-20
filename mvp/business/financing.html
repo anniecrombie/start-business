@@ -149,8 +149,8 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
        <input type="hidden" name="keywords" value=""/>
        <input type="hidden" name="start" value="1"/>
 	<div class="form-group">
-		<label for="type">Current status</label><br />
-		<select id="type" name="type" class="form-control full-width">
+		<label for="status">Current status</label><br />
+		<select id="status" name="statusid" class="form-control full-width">
 			<option value="all">All</option>
 			<option value="open">Open (accepting applications)</option>
 			<option value="closed">Closed (for this period)</option> 
@@ -158,8 +158,18 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 		</select>
 	</div>
 	<div class="form-group">
+		<label for="type">Type of financing</label><br />
+		<select id="type" name="typeid" class="form-control full-width">
+			<option value="all">All</option>
+			<option value="contribution">Grants and contributions</option>
+			<option value="loan">Loans</option>
+			<option value="guarantee">Loan guarantee</option> 
+			<option value="ended">Closed (program ended)</option>
+		</select>
+	</div>
+	<div class="form-group">
 			<label for="Region">Region</label><br />
-        <select name="year" id="year" class="form-control full-width" value="0">
+        <select class="form-control full-width" id="regioin" name="regionid">
                  <option value="0" >All</option>
                  <option value="Atlantic" >Atlantic Canada</option>
                  <option value="Quebec" >Quebec</option>
@@ -171,9 +181,10 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 	</div>
 
 <div class="form-group">
-	<label for="subject">Business activity</label><br />
-<select class="form-control full-width" id="subject" name="subjectid"><option value="0">All activities</option>
-<option value="start-up">Start-up</option>
+	<label for="activity">Business activity</label><br />
+<select class="form-control full-width" id="activity" name="activityid">
+	<option value="0">All</option>
+	<option value="start-up">Start-up</option>
 <option value="grow">Grow and improve</option>
 <option value="innovate">R+D and innovation</option>
 <option value="trade">International trade</option>
@@ -183,15 +194,16 @@ wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licenc
 </div>
 	<div class="form-group">
 	<label for="demographic">Demographic group</label><br />
-<select class="form-control full-width" id="subject" name="subjectid"><option value="0">All groups</option>
-<option value="Indigenous">Indigenous</option>
+<select class="form-control full-width" id="demographic" name="demographicid">
+	<option value="0">All</option>
+	<option value="Indigenous">Indigenous</option>
 <option value="women">Women</option>
 <option value="youth">Youth</option>
 </select>
 </div>
 <div class="form-group">
 <label for="demographic">Industry sector<br />
-<select class="form-control full-width" id="subject" name="subjectid"><option value="0">All sectors</option>
+<select class="form-control full-width" id="subject" name="subjectid"><option value="0">All sec</option>
 <option value="Space">Aerospace, defence and space</option>
 <option value="Agriculture">Agriculture</option>
 <option value="Aquaculture">Aquaculture</option>
